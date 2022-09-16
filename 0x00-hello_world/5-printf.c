@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- *printf - lalalong 
+ *printf - lalalong
  *
  */
 int main(void)
