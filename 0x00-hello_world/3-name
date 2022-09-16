@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc app.c -o cisfun
+i=$
+gcc $CFILE -o cisfun
