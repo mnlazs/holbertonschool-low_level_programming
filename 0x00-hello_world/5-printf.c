@@ -1,8 +1,7 @@
 #include<stdio.h>
 /**
- *  printf - This is a description
+ *  printf - lalalong 
  *
- * Return 0 (Success)
  */
 int main(void)
 {
