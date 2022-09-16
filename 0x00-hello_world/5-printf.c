@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
- *printf - lalalong
+ * main - this proyect is out of control
  *
+ * Return:(0)
  */
 int main(void)
 {
