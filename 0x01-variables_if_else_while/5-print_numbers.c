@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  *
@@ -6,8 +8,8 @@
  */
 int main (void)
 {
-	char numb ="0";
-	while (numb <="10")
+	char numb = "0";
+	while (numb <= "9")
 	{
 		putchar (numb);
 		numb++;
