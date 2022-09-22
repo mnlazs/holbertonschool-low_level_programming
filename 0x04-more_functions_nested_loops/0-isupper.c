@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 /**
+ * _isupper - prototype.
  * main - check the code.
  * @c: input
  * Return: Always 1 if c is uppercase, otherwise return 0
