@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ * print_numbers - function that print numbers dah!.
  * Return: 0
  */
 void print_numbers(void)
@@ -12,4 +13,4 @@ void print_numbers(void)
 		c++;
 	}
 _putchar('\n');
-}
+
