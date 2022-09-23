@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * void print_numbers(void) - prototype
- *
- * return: 0 (Success)
- *
+ * Return: 0
  */
-int main()
+void print_numbers(void)
 {
-	int i;
-	for (i = 1; i <= 10; i++){
-		count<< i <<endl;
+	char c = '0';
+
+	while (c <= '9')
+	{
+		putchar(c);
+		c++;
 	}
-	return 0;
+putchar('\n');
 }
