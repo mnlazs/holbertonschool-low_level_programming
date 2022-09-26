@@ -2,11 +2,11 @@
 #include <string.h>
 
 /**
- * strlen - funtion prototype
+ * _strlen - funtion prototype
  *
- * @str: to get the length of the string
+ * @s: to get the length of the string
  *
- * Return: the lenght of @str.
+ * Return: the lenght of @s.
  */
 int _strlen(char *s)
 {
