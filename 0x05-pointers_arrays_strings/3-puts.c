@@ -1,17 +1,18 @@
 #include "main.h"
-#include <stdio.h>
-/*
- * _puts(char *str) - prototype
+/**
+ * _puts - prints a string in stdout
+ * @str: string to print
  *
- * Return: 0 
- *
+ * Return: void
  */
-int main()
+void _puts(char *str)
 {
-	fputs("Geeksfor", stdout);
-	fputs("Geeks", stdout);
+	int i = 0;
 
-	getchar();
-	return 0;
-}
+	while (*(str + i))
+	{
+		putchar(*(str + i));
+		i++;
+	}
+	putchar('\n');
 }
