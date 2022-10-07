@@ -1,11 +1,9 @@
 #include "main.h"
 /**
- * _pow_recursion - adsffdsfsa
+ * _pow_recursion - prototype
  * @y: variables
  * @x: variables
- *
- * return 1
- *
+ * Return: -1 is y is lower than 0
  */
 int _pow_recursion(int x, int y)
 {
