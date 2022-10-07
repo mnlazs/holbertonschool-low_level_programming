@@ -2,7 +2,7 @@
 
 /**
  *
- * int factorial - prototype
+ * factorial - prototype
  * @n: variable
  *
  * Return: 1
