@@ -1,11 +1,10 @@
 #include <stdio.h>
-
 /**
- * main -  number of arguments
- * @argv: character to print
- * @argv: character to print
- * Return: 0
- **/
+ * main - check the code for Holberton School students.
+ * @argv: The character to print
+ * @argc: The character to print
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
 	argv = argv;
