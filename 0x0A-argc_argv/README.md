@@ -1,4 +1,4 @@
-Resources/n
+Resources
 Read or watch:
 
 Arguments to main
