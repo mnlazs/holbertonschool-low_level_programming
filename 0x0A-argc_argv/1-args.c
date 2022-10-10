@@ -2,12 +2,13 @@
 
 /**
  * main -  number of arguments
- * @argc: arguement count
- * @argv: array of pointers to arguement strings
+ * @argv: character to print
+ * @argv: character to print
  * Return: 0
  **/
 int main(int argc, char *argv[])
 {
-	printf("arg = %d\n", argc);
+	argv = argv;
+	printf("%d\n", argc -1);
 	return (0);
 }
