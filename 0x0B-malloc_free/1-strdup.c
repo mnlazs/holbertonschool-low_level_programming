@@ -2,7 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- *
+ * *_strdup - prototype
+ * @str: variable
+ * Return: NULL or pointer of array
  *
  */
 
