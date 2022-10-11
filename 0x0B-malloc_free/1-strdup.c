@@ -7,21 +7,34 @@
  * Return: NULL or pointer of array
  *
  */
-
 char *_strdup(char *str)
 {
-	int i;
-	int len;
-	char *newstr;
+	char *r;
+	int i, j;
+	int coun = 0;
 
-	len = strlen(str);
-	newstr = (char *)malloc(len + 1);
-	for (i = 0; i < len; i++)
+	if (str == NULL)
 	{
-		newstr[i] = str[i];
-
+		return (NULL);
 	}
 
-	return (newstr);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		coun = coun + 1;
+	}
 
+	r = malloc(sizeof(char) * coun + 1);
+
+	if (r == NULL)
+	{
+		return (NULL);
+	}
+	for (j = 0; str[j] != '\0' ; j++)
+	{
+		r[j] = str[j];
+	}
+
+	r[j] = '\0';
+
+	return (r);
 }
