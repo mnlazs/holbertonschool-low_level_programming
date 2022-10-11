@@ -1,38 +1,48 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - prototype
- * Return: result
- * @s1: variable
- * @s2: variable
- */
-
+ * *str_concat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: pointer to new space in memory or null
+ **/
 char *str_concat(char *s1, char *s2)
 {
-	int i, j;
-	int s1_len = 0, s2_len = 0;
+	int i, j, k, e, coun;
+	int coun1 = 0;
+	int coun2 = 0;
+	char *q;
 
-	char *result;
-
-	while (s1[s1_len] != '\0')
+	if (s1 == NULL)
 	{
-		s1_len++;
+		s1 = "";
 	}
-	while (s2[s2_len] != '\0')
+	if (s2 == NULL)
 	{
-		s2_len++;
+		s2 = "";
 	}
-	result = (char *)malloc(s1_len + s2_len + 1);
-
-	for (i = 0; i < s1_len; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		result[i] = s1[i];
+		coun1 = coun1 + 1;
 	}
-	for (j = 0; j < s2_len; j++)
+	for (j = 0; s2[j] != '\0'; j++)
 	{
-		result[i] = s2[j];
+		coun2 = coun2 + 1;
 	}
-		result[s1_len + s2_len] = '\0';
-
-	return (NULL);
+	coun = coun1 + coun2;
+	q = malloc(sizeof(char) * coun + 1);
+	if (q == NULL)
+	{
+		return (NULL);
+	}
+	for (k = 0; s1[k] != '\0'; k++)
+	{
+		q[k] = s1[k];
+	}
+	for (k = k, e = 0; s2[e] != '\0'; e++, k++)
+	{
+		q[k] = s2[e];
+	}
+	q[k] = '\0';
+	return (q);
 }
