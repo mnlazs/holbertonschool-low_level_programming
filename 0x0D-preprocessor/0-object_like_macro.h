@@ -1,6 +1,3 @@
- #define SIZE 1024
-
-int main(){
-foo = (char *) malloc (SIZE);
-
-}
+#ifndef SIZE 
+#define SIZE 1024
+#endif 
