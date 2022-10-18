@@ -2,12 +2,12 @@
 #include <stdlib.h>
 /**
  * malloc_checked - protype funtion
- * return: a pointer
- * @b: size`
+ * Return: a pointer
+ * @b: size
  */
 void *malloc_checked(unsigned int b)
 {
-	void *love;
+	void *love
 
 	love = malloc(b);
 
