@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * array - itirator - prototype funtion
+ * array_iterator - prototype funtion
  * @array: pointer
  * @action: pointer
  * @size: size of array
