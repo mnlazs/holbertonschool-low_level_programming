@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
  * main - function with two arguments
  * @argc: count of arguments
  * @argv: variadic arguments
- *
  * Description: copies the content of a file to another file
  * Return: 0 for success and exit codes for failure
  */
@@ -67,4 +65,3 @@ int main(int argc, char *argv[])
 	}
 
 	return (0);
-}
