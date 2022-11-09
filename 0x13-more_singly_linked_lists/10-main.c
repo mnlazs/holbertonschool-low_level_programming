@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
+#include <fcntl.h>
 /**
  * main - check the code
  *

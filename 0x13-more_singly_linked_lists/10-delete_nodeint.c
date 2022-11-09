@@ -1,51 +1,46 @@
 #include "lists.h"
+#include <stdio.h>
 /**
- * insert_nodeint_at_index - function that inserts a new node at a given
- * position
- * @head: Double pointer of linked list listint_t
- * @idx: Unsigned int index of the list where the new node should be added.
- * Index starts at 0
- * @n: Int fornumber to be added in new node
- * Return: Address of the new node, NULL if adding new node at idx is not
- * possible or NULL if it failed
+ * delete_nodeint_at_index - function with two arguments
+ * @head: pointer to head pointer of first node in a linked list
+ * @index: element index in a linked list
+ *
+ * Description: deletes the node at index of a linked list
+ * Return: 1 if succeeded or -1 if fail
  */
-
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
+	listint_t *cursor, *c_next;
+	unsigned int count = 0;
 
-	unsigned int i = 0;
-	listint_t *new;
-	listint_t *temp;
+	cursor = *head;
 
-	new  = malloc(sizeof(listint_t *));
+	if (head == NULL || *head == NULL)
+		return (-1);
 
-	if (new == NULL)
-		return (NULL);
-
-	if (idx == 0)
+	if (index == 0)
 	{
-		new->next = *head;
-		*head = new;
-		(*head)->n = n;
-		return (*head);
+		*head = cursor->next;
+		free(cursor);
+		return (1);
 	}
-
-	temp = *head;
-
-	while (temp != NULL)
+	if (index == 1)
 	{
-		if ((idx - 1) == i)
-		{
-			new->n = n;
-			new->next = temp->next;
-			temp->next = new;
-			return (new);
-		}
-
-		temp = temp->next;
-		i++;
+		cursor = (*head)->next;
+		(*head)->next = cursor->next;
+		free(cursor);
+		return (1);
 	}
+	while (count < index - 1)
+	{
+		if (cursor->next == NULL)
+			return (-1);
+		count++;
+		cursor = cursor->next;
+		c_next = cursor->next;
+	}
+	cursor->next = c_next->next;
+	free(c_next);
 
-	free(new);
-	return (NULL);
+	return (1);
 }
