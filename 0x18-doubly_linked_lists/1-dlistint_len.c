@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * dlistint_len - function with one argument
