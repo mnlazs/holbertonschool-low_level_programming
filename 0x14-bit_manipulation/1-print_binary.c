@@ -2,7 +2,7 @@
 /**
  * print_binary - Entry Point
  * @n: dec input
- * Return: 0
+ * Return: 
  */
 void print_binary(unsigned long int n)
 {
